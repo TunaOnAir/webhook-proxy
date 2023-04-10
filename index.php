@@ -1,0 +1,1 @@
+<?php file_get_contents(('https://discord.com/api/webhooks/' . $_GET['hook']), false, stream_context_create(array('http' => array('header'  => "Content-type: application/json\r\n", 'method'  => 'POST', 'content' => file_get_contents('php://input')))));
